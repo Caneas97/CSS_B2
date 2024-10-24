@@ -1,0 +1,72 @@
+@keyframes eyes {
+    0%,
+    8.88889%,
+    100% {
+        top: -50px;
+    }
+    17.77778% {
+        top: -45px;
+    }
+    91.11111% {
+        top: -20px;
+    }
+    57.77778%,
+    88.88889% {
+        top: -15px;
+    }
+    66.66667% {
+        top: -25px;
+    }
+}
+
+.globe .bird .body .eye::after {
+    animation: eyes 4.5s linear infinite;
+}
+
+@keyframes wings {
+    0%,
+    88.88889%,
+    100% {
+        top:70px;
+    }
+    91.11111% {
+        top: 60px;
+    }
+}
+
+.globe .bird .body::before, .globe .bird .body::after {
+    animation: wings 4.5s linear infinite;
+}
+
+@keyframes feet {
+    0%,
+    88.88889%,
+    100% {
+        top: -2px;
+    }
+    91.11111% {
+        top: 0px;
+    }
+}
+
+.globe .bird .body .feet::before, .globe .bird .body .feet::after {
+    animation: feet 4.5s linear infinite;
+}
+
+@keyframes cloud {
+    0% {
+        left: -140px;
+    }
+    100% {
+        left: 280px;
+    }
+}
+
+.globe .cloud {
+    animation: cloud 9s linear infinite;
+}
+
+.globe .cloud.small {
+    animation-delay: -1.5s;
+    animation-duration: 13.5s;
+}
