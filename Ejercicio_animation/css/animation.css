@@ -70,3 +70,63 @@
     animation-delay: -1.5s;
     animation-duration: 13.5s;
 }
+
+
+@keyframes sunAnimation {
+    0%, 50% {
+        opacity: 1; 
+    }
+    51%, 100% {
+        opacity: 0; 
+    }
+}
+
+@keyframes moonAnimation {
+    0%, 50% {
+        opacity: 0; 
+    }
+    51%, 100% {
+        opacity: 1; 
+    }
+}
+
+/* @keyframes sunMovement {
+    0% {
+        top: -120px;
+    }
+    50% {
+        top: 20px;
+    }
+    100% {
+        top: -120px;
+    }
+}
+
+@keyframes moonMovement {
+    0% {
+        top: -120px;
+    }
+    50% {
+        top: 20px;
+    }
+    100% {
+        top: -120px;
+    }
+} */
+/* @keyframes sunRotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes moonRotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+} */
