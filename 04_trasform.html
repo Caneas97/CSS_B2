@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            margin: 100px auto;
+            background-color: blue;
+            width: 200px;
+            height: 200px;
+            /* rotate | scale | skew | translate */
+            /* transform: scale(0.5) rotate(45deg);
+            transform: skew(25deg);
+            transform: translate(180px,200px); */
+            transform: translateX(100px);
+            transition: all 0.5s ease-in-out;
+        }
+        .box:hover {
+            /* transform: translate(-700px); */
+            transform:perspective(100px) translate3d(20px, 20px, 20px);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <ul>
+            <li>Uno</li>
+            <li>Dos</li>
+            <li>Tres</li>
+        </ul>
+    </div>
+</body>
+</html>
